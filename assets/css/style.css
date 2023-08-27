@@ -7,12 +7,12 @@ html {
 }
 
 body {
-  background: rgb(173, 146, 252);
+  background: rgb(173, 246, 252);
   background: linear-gradient(
-      51deg,
-      rgba(173, 146, 252, 1) 0%,
-      rgba(75, 101, 230, 1) 44%,
-      rgba(86, 46, 180, 1) 85%
+      0deg,
+      rgba(255, 101, 30, 1) 0%,
+      rgba(175, 201, 230, 1) 24%,
+      rgba(255, 246, 280, 51) 95%
     )
     fixed;
 }

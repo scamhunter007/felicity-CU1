@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Verification</title>
+</head>
+<body>
+    <h1>Protected Content</h1>
+    <p>Please enter the password to access the content:</p>
+    <input type="password" id="passwordInput">
+    <button id="submitButton">Submit</button>
+    <p id="errorMessage" style="color: red; display: none;">Incorrect password. Please try again.</p>
+
+    <script>
+        document.getElementById("submitButton").addEventListener("click", function() {
+            var enteredPassword = document.getElementById("passwordInput").value;
+            var correctPassword = "goatsrule"; // Change this to the correct password
+
+            if (enteredPassword === correctPassword) {
+                // Correct password, show the content
+                document.getElementById("errorMessage").style.display = "none";
+                alert("Access granted! You can now see the protected content.");
+               
+			// Add your code to show or redirect to the protected content here
+
+				document.getElementById("redirectToPage").addEventListener("click", function() {
+            	// Replace "newpage.html" with the URL of the page you want to redirect to
+            	window.location.href = "connecting.html";
+        });
+	
+			
+			} else {
+                // Incorrect password, show an error message
+                document.getElementById("errorMessage").style.display = "block";
+            }
+        });
+    </script>
+</body>
+</html>

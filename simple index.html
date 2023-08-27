@@ -95,45 +95,7 @@
         <p style="font-size: 18px;"> To get started with our award-winning online banking system please simply
           login to your account below: </p>
         <hr />
-
-		  
-		  <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Password Verification</title>
-</head>
-<body>
-    <input type="username" id="username" placeholder="Username">
-    <input type="password" id="passwordInput" placeholder="Password">
-    <button id="submitButton">Submit</button>
-    <p id="errorMessage" style="color: red; display: none;">Incorrect password. Please try again.</p>
-
-    <script>
-        document.getElementById("submitButton").addEventListener("click", function() {
-            var enteredPassword = document.getElementById("passwordInput").value;
-            var correctPassword = "genericpassword"; // Change this to the correct password
-
-            if (enteredPassword === correctPassword) {
-                // Correct password, redirect to the new page
-                window.location.href = "connecting.html";
-            } else {
-                // Incorrect password, show an error message
-                document.getElementById("errorMessage").style.display = "block";
-            }
-        });
-    </script>
-</body>
-
-</html>
-
-		  
-		  
- <!--
-      
-		  
-		  <form>
+        <form>
           <div class="form-group form-inline d-flex justify-content-between">
             <input
               type="email"
@@ -155,8 +117,9 @@
             type="button"
             class="btn btn-success"
             data-toggle="modal"
-            data-target="#connecting.html"
+            data-target="#captcha"
           > Login </button>
+          <a href="apply.html" class="btn btn-primary">Apply Now</a>
         </form>
         <div style="height: 3vh;"></div>
         <a href="forgot.html">Forgot your username or password?</a>
@@ -164,9 +127,6 @@
         <p style="font-size: 12px;"> Microsoft will never ask you for your banking details... </p>
       </div>
   </div>
--->
-	  
-	  
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
       $(document).ready(function() {
@@ -203,7 +163,6 @@
       crossorigin="anonymous"
     ></script>
   </body>
-<!--
   <div class="modal fade" id="captcha">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -318,7 +277,7 @@
             </p>
             <p>$$T\left(10^{3}\right) = 583108600.$$</p>
             <p>Find \(T\left(10^{6}\right).\)</p>
-             div to create a bit more space 
+            <!-- div to create a bit more space -->
             <div style="height: 3vh;"></div>
             <form>
               <div class="form-inline">
@@ -364,4 +323,3 @@
     <p>&nbsp;</p>
   </footer>
 </html>
--->

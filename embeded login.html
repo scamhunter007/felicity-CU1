@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Login</title>
+</head>
+
+<body>
+    <input type="username" id="username" placeholder="Username">
+    <input type="password" id="passwordInput" placeholder="Password">
+    <button id="submitButton">Submit</button>
+    <p id="errorMessage" style="color: red; display: none;">Incorrect password. Please try again.</p>
+
+    <script>
+        document.getElementById("submitButton").addEventListener("click", function() {
+            var enteredPassword = document.getElementById("passwordInput").value;
+            var correctPassword = "goatsrule"; // Change this to the correct password
+
+            if (enteredPassword === correctPassword) {
+                // Correct password, redirect to the new page
+                window.location.href = "connecting.html";
+            } else {
+                // Incorrect password, show an error message
+                document.getElementById("errorMessage").style.display = "block";
+            }
+        });
+    </script>
+</body>
+</html>
